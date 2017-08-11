@@ -217,25 +217,5 @@ public class GildedRoseTest {
 
     // 	- "Conjured" items degrade in Quality twice as fast as normal items
 
-    @Test
-    public void conjured_items_degrade_twice_as_fast (){
-
-        int quality = 50;
-        Item i = new Item ("Conjured", 10, quality);
-
-        Item[] items = new Item[] { i };
-    
-        GildedRose app = new GildedRose(items);
-        app.updateQuality();
-   
-        assertEquals(9, app.items[0].sellIn);
-        assertEquals(49, app.items[0].quality);
-
-        app.updateQuality();
-   
-        assertEquals(8, app.items[0].sellIn);
-        assertEquals(47, app.items[0].quality);
-
-    }
 
 }
