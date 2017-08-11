@@ -1,8 +1,9 @@
-import static org.junit.Assert.*;
+package net.praqma.codeacademy.gildedrose;
+
+
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-package net.praqma.codeacademy.gildedrose;
 
 
 public class GildedRoseTest {
